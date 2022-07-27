@@ -1,4 +1,4 @@
-package main
+package src
 
 /*
  * @lc app=leetcode id=2 lang=golang
@@ -14,6 +14,11 @@ package main
  *     Next *ListNode
  * }
  */
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	list := &ListNode{0, nil}
