@@ -7,7 +7,7 @@ package src
  */
 
 // @lc code=start
-func isPalindrome(x int) bool {
+func isPalindromeNumber(x int) bool {
 	if x < 0 {
 		return false
 	}
