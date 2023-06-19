@@ -26,8 +26,13 @@ func threeSumClosest(nums []int, target int) int {
 				diff = newDiff
 				closest = sum
 			}
+			if diff == 0 {
+				return sum
+			}
 			if sum < target {
 				left++
+			} else {
+				right--
 			}
 		}
 	}
