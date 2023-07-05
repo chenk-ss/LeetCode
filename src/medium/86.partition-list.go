@@ -14,7 +14,7 @@ package medium
  *     Next *ListNode
  * }
  */
-func partition(head *ListNode, x int) *ListNode {
+func partition86(head *ListNode, x int) *ListNode {
 	nHead, notBelowHead := &ListNode{}, &ListNode{}
 	belowNode, notBelowNode := nHead, notBelowHead
 	for head != nil {
