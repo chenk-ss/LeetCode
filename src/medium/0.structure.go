@@ -17,3 +17,23 @@ type Node struct {
 	Right *Node
 	Next  *Node
 }
+
+type RandomNode struct {
+	Val    int
+	Next   *RandomNode
+	Random *RandomNode
+}
+
+type GraphNode struct {
+	Val       int
+	Neighbors []*GraphNode
+}
+
+type QuadNode struct {
+	Val         bool
+	IsLeaf      bool
+	TopLeft     *QuadNode
+	TopRight    *QuadNode
+	BottomLeft  *QuadNode
+	BottomRight *QuadNode
+}

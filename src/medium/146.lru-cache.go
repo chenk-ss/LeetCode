@@ -13,7 +13,7 @@ type LRUCache struct {
 	cap  int
 }
 
-func Constructor(capacity int) LRUCache {
+func Constructor146(capacity int) LRUCache {
 	return LRUCache{m: make(map[int]int), list: []int{}, cap: capacity}
 }
 
