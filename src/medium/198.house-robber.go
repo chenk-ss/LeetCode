@@ -7,7 +7,7 @@ package medium
  */
 
 // @lc code=start
-func rob(nums []int) int {
+func rob198(nums []int) int {
 	length := len(nums)
 	if length == 1 {
 		return nums[0]

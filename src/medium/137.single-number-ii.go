@@ -7,7 +7,7 @@ package medium
  */
 
 // @lc code=start
-func singleNumber(nums []int) int {
+func singleNumber137(nums []int) int {
 	bitCounts := make([]int, 32)
 	for _, num := range nums {
 		for i := 0; i < 32; i++ {
