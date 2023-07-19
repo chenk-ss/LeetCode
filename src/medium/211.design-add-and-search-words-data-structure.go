@@ -12,7 +12,7 @@ type WordDictionary struct {
 	end      bool
 }
 
-func Constructor() WordDictionary {
+func Constructor211() WordDictionary {
 	return WordDictionary{}
 }
 
