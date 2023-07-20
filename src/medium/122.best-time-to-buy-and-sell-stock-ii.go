@@ -8,7 +8,7 @@ package medium
 
 // @lc code=start
 
-func maxProfit(prices []int) int {
+func maxProfit122(prices []int) int {
 	res := 0
 	for i := 1; i < len(prices); i++ {
 		if prices[i] > prices[i-1] {
