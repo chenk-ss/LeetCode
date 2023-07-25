@@ -37,3 +37,8 @@ type QuadNode struct {
 	BottomLeft  *QuadNode
 	BottomRight *QuadNode
 }
+
+type NTreeNode struct {
+	Val      int
+	Children []*NTreeNode
+}
