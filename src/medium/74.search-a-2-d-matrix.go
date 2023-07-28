@@ -7,7 +7,7 @@ package medium
  */
 
 // @lc code=start
-func searchMatrix(matrix [][]int, target int) bool {
+func searchMatrix74(matrix [][]int, target int) bool {
 	top, buttom, left, right := 0, len(matrix)-1, 0, len(matrix[0])-1
 	rowMid, colMid := 0, 0
 	for top <= buttom {
