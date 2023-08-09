@@ -15,7 +15,7 @@ package medium
  *     Right *TreeNode
  * }
  */
-func levelOrder(root *TreeNode) [][]int {
+func levelOrder102(root *TreeNode) [][]int {
 	res := [][]int{}
 	levelOrderFunc(root, &res, 0)
 	return res

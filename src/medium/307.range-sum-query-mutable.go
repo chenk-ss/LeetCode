@@ -11,7 +11,7 @@ type NumArray struct {
 	list []int
 }
 
-func Constructor(nums []int) NumArray {
+func Constructor307(nums []int) NumArray {
 	return NumArray{list: nums}
 }
 
