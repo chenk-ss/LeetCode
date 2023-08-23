@@ -26,7 +26,7 @@ type PeekingIterator struct {
 	arr []int
 }
 
-func Constructor(iter *Iterator) *PeekingIterator {
+func Constructor284(iter *Iterator) *PeekingIterator {
 	res := PeekingIterator{}
 	for iter.hasNext() {
 		res.arr = append(res.arr, iter.next())

@@ -15,7 +15,7 @@ package medium
  *     Right *TreeNode
  * }
  */
-func pathSum(root *TreeNode, targetSum int) [][]int {
+func pathSum113(root *TreeNode, targetSum int) [][]int {
 	res := [][]int{}
 	if root == nil {
 		return res
@@ -24,10 +24,10 @@ func pathSum(root *TreeNode, targetSum int) [][]int {
 		res = append(res, []int{root.Val})
 		return res
 	}
-	for _, v := range pathSum(root.Left, targetSum-root.Val) {
+	for _, v := range pathSum113(root.Left, targetSum-root.Val) {
 		res = append(res, append([]int{root.Val}, v...))
 	}
-	for _, v := range pathSum(root.Right, targetSum-root.Val) {
+	for _, v := range pathSum113(root.Right, targetSum-root.Val) {
 		res = append(res, append([]int{root.Val}, v...))
 	}
 	return res
